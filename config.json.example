@@ -1,0 +1,21 @@
+{
+    "active_model": "openai",
+    "models": {
+        "openai": {
+            "model_name": "gpt-4o-mini",
+            "api_key_env": "OPENAI_API_KEY"
+        },
+        "groq": {
+            "model_name": "llama-3.3-70b-versatile",
+            "api_key_env": "GROQ_API_KEY"
+        },
+        "google": {
+            "model_name": "gemini-1.5-flash",
+            "api_key_env": "GOOGLE_API_KEY"
+        },
+        "huggingface": {
+            "repo_id": "meta-llama/Llama-3.3-70B-Instruct",
+            "api_key_env": "HUGGINGFACE_API_KEY"
+        }
+    }
+} 

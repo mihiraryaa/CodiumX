@@ -1,0 +1,19 @@
+// langGraph Workflow
+digraph {
+	self_reflection_agent [label="Self Reflection Agent"]
+	test_generator_agent [label="Test Generator Agent"]
+	wait_state [label="Wait State"]
+	coder_agent [label="Coder Agent"]
+	planner_agent [label="Planner Agent"]
+	tester_agent [label="Tester Agent"]
+	debugger_agent [label="Debugger Agent"]
+	END [label=END]
+	self_reflection_agent -> planner_agent
+	planner_agent -> wait_state
+	test_generator_agent -> wait_state
+	wait_state -> coder_agent
+	coder_agent -> tester_agent
+	debugger_agent -> planner_agent
+	tester_agent -> debugger_agent [label=Error]
+	tester_agent -> END [label="No Error"]
+}
