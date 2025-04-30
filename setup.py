@@ -3,8 +3,8 @@ warnings.filterwarnings("ignore")
 
 import os
 import json
-fromc import BaseModel, Field typing import List, Optional, Dict
-from pydanti
+from pydantic import BaseModel, Field typing import List, Optional, Dict
+
 import logging
 
 # Configure logging
